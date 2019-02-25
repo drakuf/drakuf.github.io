@@ -1,0 +1,24 @@
+@import "variables"
+
+.modal
+
+  .bg-image
+    background: url(../img/modal-bg.jpg) no-repeat
+    background-size: cover
+
+    p, a
+      color: #92e3d8
+
+  h2
+    font-size: 18px
+    color: $primary-color
+    letter-spacing: .5px
+
+  .modal-content
+    overflow: hidden
+
+    > div
+      &:first-of-type
+        flex: 2
+      &:last-of-type
+        flex: 3.5

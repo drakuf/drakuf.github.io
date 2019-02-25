@@ -1,0 +1,18 @@
+<svg  version="1.1" 
+                    viewBox="0 0 17 17" 
+                    xml:space="preserve" 
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="17">
+                <defs>
+                  <clipPath id="clipPathFaceBook18">
+                    <path class="social" d="m0 32h32v-32h-32z"/>
+                  </clipPath>
+                </defs>
+                <g transform="matrix(.53125 0 0 -.53125 -.0002125 17)">
+                  <g clip-path="url(#clipPathFaceBook18)">
+                    <g transform="translate(28 32)">
+                      <path fill="#fff" class="social" d="m0 0h-24c-2.206 0-4-1.794-4-4v-24c0-2.206 1.794-4 4-4h12v11h-4v5h4v4c0 3.313 2.686 6 6 6h4v-5h-2c-1.104 0-2 0.104-2-1v-4h5l-2-5h-3v-11h6c2.206 0 4 1.794 4 4v24c0 2.206-1.794 4-4 4"/>
+                    </g>
+                  </g>
+                </g>
+              </svg>

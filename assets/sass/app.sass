@@ -1,0 +1,124 @@
+@import "./variables"
+@import "./owl-carousel"
+@import "./fonts"
+@import "./modal"
+
+h1, h2, h3, h4, h5, h6
+  font-family: Geometria-Heavy, sans-serif
+  padding: 0
+  margin: 0
+
+a, p, div, section
+  font-family: ProximaNova-Semibold, sans-serif
+  padding: 0
+  margin: 0
+
+a:hover, a:focus, button:hover, button:focus
+  outline: none
+
+.component-margin
+  margin-top: 10em
+
+@media (max-width: 720px)
+   .component-margin
+     margin-top: 14em
+
+h2
+  font-size: 36px
+  text-transform: uppercase
+  letter-spacing: 2px
+
+a.preview
+  color: $primary-color
+  text-decoration: none
+  margin: 0
+  padding: 0
+
+button:not(.close)
+  outline: none
+  cursor: pointer
+  height: 50px
+  border: none
+  font-family: ProximaNova-Semibold, sans-serif
+  text-transform: uppercase
+  font-size: 16px
+  letter-spacing: 1px
+  border-radius: 4px
+  z-index: 2
+  &.secondary
+    background-color: white
+    color: $primary-color
+    &:hover
+      background-color: darken(white, 3%)
+      box-shadow: 0 4px 23.75px 1.25px rgba(29, 66, 119, .3)
+    &.ripple:after
+      background: #ebebeb
+  &.primary
+    background-color: $primary-color
+    color: white
+    &:hover
+      background-color: lighten($primary-color, 3%)
+      box-shadow: 0 4px 23.75px 1.25px rgba(29, 66, 119, .3)
+    &.ripple:after
+      background: $primary-color
+  &:focus
+    outline: none!important
+    box-shadow: none!important
+
+.text-green
+  color: $primary-color
+
+.text-dark-green
+  color: $secondary-color
+
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  padding: 0
+  overflow: hidden
+  border: 0
+  clip: rect(0, 0, 0, 0)
+  clip-path: inset(100%)
+
+.form-group
+  input, select
+    height: 50px
+    background-color: $gray-color
+    font-family: ProximaNova-Semibold, sans-serif
+    font-size: 14px
+    border: 1px solid desaturate(lighten($primary-color, 50%), 81%)
+    border-radius: 4px
+    &:focus
+      outline: none
+      border-color: $primary-color
+      box-shadow: 0 0 0 0.2rem transparentize($primary-color, .75)
+
+label
+  margin-bottom: 0
+  font-size: .9rem
+
+.bold
+  font-family: Geometria-Heavy, sans-serif
+
+.mini-title
+  font-size: 1.2em
+
+.total
+  font-size: 1.5em
+
+.middle-arrow
+  background: url(../img/arrow.jpg) no-repeat
+
+.arrow, .total
+  background-color: #e8f5f4
+
+.arrow .text
+  color: $softText-color
+
+.arrow .text-bold
+  font-size: 1.5em
+
+.text-bold
+  font-size: 1.5em

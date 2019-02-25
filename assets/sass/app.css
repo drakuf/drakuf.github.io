@@ -1,0 +1,231 @@
+/* 	Core Owl Carousel CSS File
+ *	v1.3.2
+ */
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+/* display none until init */
+.owl-carousel {
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y; }
+
+.owl-carousel .owl-wrapper {
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px); }
+
+.owl-carousel .owl-wrapper-outer {
+  overflow: hidden;
+  position: relative;
+  width: 100%; }
+
+.owl-carousel .owl-wrapper-outer.autoHeight {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out; }
+
+.owl-carousel .owl-item {
+  float: left; }
+
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div {
+  cursor: pointer; }
+
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0); }
+
+@font-face {
+  font-family: ProximaNova-Semibold;
+  src: url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot");
+  src: local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.ttf") format("truetype"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.svg#ProximaNova-Semibold") format("svg"), url("../fonts/ProximaNova-Semibold/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNova-Regular;
+  src: url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot");
+  src: local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg"), url("../fonts/ProximaNova-Regular/ProximaNova-Regular.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNova-Bold;
+  src: url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot");
+  src: local("ProximaNova-Bold"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg"), url("../fonts/ProximaNova-Bold/ProximaNova-Bold.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: ProximaNova-RegularIt;
+  src: url("../fonts/ProximaNova-RegularIt/ProximaNova-RegularIt.eot");
+  src: local("ProximaNova-RegularIt"), url("../fonts/ProximaNova-RegularIt/ProximaNova-RegularIt.woff2") format("woff2"), url("../fonts/ProximaNova-RegularIt/ProximaNova-RegularIt.woff") format("woff"), url("../fonts/ProximaNova-RegularIt/ProximaNova-RegularIt.ttf") format("truetype"), url("../fonts/ProximaNova-RegularIt/ProximaNova-RegularIt.svg#ProximaNova-RegularIt") format("svg"), url("../fonts/ProximaNova-RegularIt/ProximaNova-RegularIt.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: italic; }
+@font-face {
+  font-family: Geometria-ExtraBold;
+  src: url("../fonts/Geometria-ExtraBold/Geometria-ExtraBold.eot");
+  src: local("Geometria-ExtraBold"), url("../fonts/Geometria-ExtraBold/Geometria-ExtraBold.woff2") format("woff2"), url("../fonts/Geometria-ExtraBold/Geometria-ExtraBold.woff") format("woff"), url("../fonts/Geometria-ExtraBold/Geometria-ExtraBold.ttf") format("truetype"), url("../fonts/Geometria-ExtraBold/Geometria-ExtraBold.svg#Geometria-ExtraBold") format("svg"), url("../fonts/Geometria-ExtraBold/Geometria-ExtraBold.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: Geometria-Heavy;
+  src: url("../fonts/Geometria-Heavy/Geometria-Heavy.eot");
+  src: local("Geometria-Heavy"), url("../fonts/Geometria-Heavy/Geometria-Heavy.woff2") format("woff2"), url("../fonts/Geometria-Heavy/Geometria-Heavy.woff") format("woff"), url("../fonts/Geometria-Heavy/Geometria-Heavy.ttf") format("truetype"), url("../fonts/Geometria-Heavy/Geometria-Heavy.svg#Geometria-Heavy") format("svg"), url("../fonts/Geometria-Heavy/Geometria-Heavy.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal; }
+@font-face {
+  font-family: Geometria-Light;
+  src: url("../fonts/Geometria-Light/Geometria-Light.eot");
+  src: local("Geometria-Light"), url("../fonts/Geometria-Light/Geometria-Light.woff2") format("woff2"), url("../fonts/Geometria-Light/Geometria-Light.woff") format("woff"), url("../fonts/Geometria-Light/Geometria-Light.ttf") format("truetype"), url("../fonts/Geometria-Light/Geometria-Light.svg#Geometria-Light") format("svg"), url("../fonts/Geometria-Light/Geometria-Light.eot?#iefix") format("embedded-opentype");
+  font-weight: 300;
+  font-style: normal; }
+.modal .bg-image {
+  background: url(../img/modal-bg.jpg) no-repeat;
+  background-size: cover; }
+  .modal .bg-image p, .modal .bg-image a {
+    color: #92e3d8; }
+.modal h2 {
+  font-size: 18px;
+  color: #00bfa5;
+  letter-spacing: 0.5px; }
+.modal .modal-content {
+  overflow: hidden; }
+  .modal .modal-content > div:first-of-type {
+    flex: 2; }
+  .modal .modal-content > div:last-of-type {
+    flex: 3.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Geometria-Heavy, sans-serif;
+  padding: 0;
+  margin: 0; }
+
+a, p, div, section {
+  font-family: ProximaNova-Semibold, sans-serif;
+  padding: 0;
+  margin: 0; }
+
+a:hover, a:focus, button:hover, button:focus {
+  outline: none; }
+
+h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+a.preview {
+  color: #00bfa5;
+  text-decoration: none;
+  margin: 0;
+  padding: 0; }
+
+button:not(.close) {
+  outline: none;
+  cursor: pointer;
+  height: 50px;
+  border: none;
+  font-family: ProximaNova-Semibold, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  z-index: 2; }
+  button:not(.close).secondary {
+    background-color: white;
+    color: #00bfa5; }
+    button:not(.close).secondary:hover {
+      background-color: #f7f7f7;
+      box-shadow: 0 4px 23.75px 1.25px rgba(29, 66, 119, 0.3); }
+    button:not(.close).secondary.ripple:after {
+      background: #ebebeb; }
+  button:not(.close).primary {
+    background-color: #00bfa5;
+    color: white; }
+    button:not(.close).primary:hover {
+      background-color: #00ceb2;
+      box-shadow: 0 4px 23.75px 1.25px rgba(29, 66, 119, 0.3); }
+    button:not(.close).primary.ripple:after {
+      background: #00bfa5; }
+  button:not(.close):focus {
+    outline: none !important;
+    box-shadow: none !important; }
+
+.text-green {
+  color: #00bfa5; }
+
+.text-dark-green {
+  color: #16444d; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(100%); }
+
+.form-group input, .form-group select {
+  height: 50px;
+  background-color: #f6faf9;
+  font-family: ProximaNova-Semibold, sans-serif;
+  font-size: 14px;
+  border: 1px solid #d9e5e3;
+  border-radius: 4px; }
+  .form-group input:focus, .form-group select:focus {
+    outline: none;
+    border-color: #00bfa5;
+    box-shadow: 0 0 0 0.2rem rgba(0, 191, 165, 0.25); }
+
+label {
+  margin-bottom: 0;
+  font-size: 0.9rem; }
+
+.bold {
+  font-family: Geometria-Heavy, sans-serif; }
+
+.mini-title {
+  font-size: 1.2em; }
+
+.total {
+  font-size: 1.5em; }
+
+.middle-arrow {
+  background: url(../img/arrow.jpg) no-repeat; }
+
+.arrow, .total {
+  background-color: #e8f5f4; }
+
+.arrow .text {
+  color: #779f99; }
+
+.arrow .text-bold {
+  font-size: 1.5em; }
+
+.text-bold {
+  font-size: 1.5em; }
+
+/*# sourceMappingURL=app.css.map */
